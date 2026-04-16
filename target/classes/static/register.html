@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Student Notes</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="page-wrapper auth-page">
+        <div class="auth-container">
+            <section class="hero-card">
+                <span class="eyebrow">Join the community</span>
+                <h1>Create your Student Notes account</h1>
+                <p>Register now to securely save, update, and manage your personal notes from anywhere.</p>
+                <div class="hero-image">
+                    <img src="/images/auth-illustration.svg" alt="Student notes illustration">
+                </div>
+                <div class="hero-footer">
+                    <span>Already registered?</span>
+                    <a href="/login.html">Login here</a>
+                </div>
+            </section>
+            <section class="form-card">
+                <div class="form-header">
+                    <h2>Register</h2>
+                    <p>Sign up to start organizing your notes.</p>
+                </div>
+                <div id="alert" class="alert" style="display:none;"></div>
+                <form id="registerForm">
+                    <label>
+                        Username
+                        <input id="username" type="text" placeholder="Username" required>
+                    </label>
+                    <label>
+                        Email
+                        <input id="email" type="email" placeholder="Email address" required>
+                    </label>
+                    <label>
+                        Password
+                        <input id="password" type="password" placeholder="Password" required>
+                    </label>
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>

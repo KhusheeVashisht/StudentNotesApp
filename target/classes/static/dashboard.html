@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Student Notes</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="header">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Manage your personal notes with security and simplicity.</p>
+            </div>
+            <button id="logoutButton" class="button-secondary">Logout</button>
+        </div>
+        <div id="alert" class="alert" style="display:none;"></div>
+        <div class="card">
+            <div>
+                <h2 class="page-title">Create a new note</h2>
+            </div>
+            <form id="createNoteForm">
+                <input id="noteTitle" type="text" placeholder="Note title" required>
+                <textarea id="noteContent" rows="4" placeholder="Note content" required></textarea>
+                <button type="submit">Save Note</button>
+            </form>
+        </div>
+        <div class="card" id="editSection" style="display:none;">
+            <div>
+                <h2 class="page-title">Edit note</h2>
+            </div>
+            <form id="editNoteForm">
+                <input id="editNoteId" type="hidden">
+                <input id="editTitle" type="text" placeholder="Title" required>
+                <textarea id="editContent" rows="4" placeholder="Content" required></textarea>
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+        <div class="card">
+            <div>
+                <h2 class="page-title">My notes</h2>
+            </div>
+            <div id="notesList" class="note-list"></div>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
